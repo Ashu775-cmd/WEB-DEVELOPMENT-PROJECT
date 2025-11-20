@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+} */
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px,-100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px,100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+.cardContainer{
+    position: relative;
+    height: 225px;
+    width: 372px;
+    /* margin: 100px auto;  */
+    z-index: 100;
+   
+    transition: 0.5s;
+   transform-style: preserve-3d;
+}
+.cardContainer:hover{
+    transform: rotateY(180deg);
+}
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    border-radius: 20px;
+    font-family: poppins;
+    /* top: 0;
+    left: 0; */
+    backface-visibility: hidden;
+    
+    
+}
+.firstContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+.firstImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.firstContainer p{
+    color: white;
+}
+.SecondDetailContainer{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: white;
+}
+.SecondDetailContainer span{
+    margin: 0px 3px;
+    letter-spacing: 0.5px;
+}
+.SecondDetailContainer .firstCardNumber{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.thirdDetailContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 0.5rem;
+}
+.thirdDetailContainer .name{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.thirdDetailContainer .name span{
+    margin: 0px 1px;
+    font-size: 14px;
+}
+.thirdDetailContainer .thirdDetail{
+    margin-right: 1.5rem;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.thirdDetail .validity{
+    font-size: 12px;
+}
+.cardContainer .cardBackFace{
+    position: absolute;
+    padding:  1.5rem;
+    color: white;
+    border: none;
+    transform: rotateY(180deg);
+}
+.cardBackFace h6{
+    font-size: 8px;
+}
+.cardBackFace .magneticStrip{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 45px;
+    margin-top: 1rem;
+}
+.cardBackFace .whiteStrip{
+   
+   margin-top: 5.3rem;
+   width: 80%;
+   height: 35px;
+   border-radius: 5px;
+   background: repeating-linear-gradient(
+    #fff,
+    #fff 3px,
+    #efefef 0px,
+    #efefef 9px
+   );
+}
+.cardBackFace span i{
+    position:  relative;
+    top: -30px;
+    right: -254px;
+    color: black;
+    background-color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.cardBackFace .text{
+    font-size: 8px;
+    text-align: justify;
+    line-height: 1.1;
+}
