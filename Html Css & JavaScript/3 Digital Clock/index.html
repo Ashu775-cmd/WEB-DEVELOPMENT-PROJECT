@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="bgVideo" src="bg video.mp4" autoplay loop playinsline></video>
+    <div class="wrapper">
+        <div class="clockContainer">
+            <p class="first">Digital Clock</p>
+            <div class="detailsSection">
+               <div class="boxOne">
+                <p class="boxOnePara">Time </p>
+                <p class="boxOnePara">Date </p>
+                <p class="boxOnePara">Day </p>
+               </div>
+               <div class="boxTwo">
+                 <p  class="boxTwoPara timePara">- <span id="hour">08</span>:<span id="minute">34</span>:<small id="second">45</small> </p>
+                <p class="boxTwoPara datePara">- <span id="date" >15</span>:<span id="month">09</span>:<span id="year">2025</span></p>
+                <p class="boxTwoPara dayPara">- <span id="day">Sunday</span></p>
+               </div>
+            </div>
+            <div class="btnContainer">
+                <button class="btn">Switch to 24-hours</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

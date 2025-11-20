@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 500px;
+}
+.container .firstBox{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 80px;
+    align-items: center;
+}
+.container .firstBox .fb1{
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 23px;
+    background-color: black;
+    color: #ffff;
+}
+.container .firstBox .fb1{
+    transition: 0.5s;
+
+}
+.container .firstBox .fb1:hover{
+    transform: scale(1.3);
+}
+.container .firstBox .fbox i{
+    transition: 0.5s;
+
+}
+.container .firstBox .fbox i:hover{
+    transform: scale(1.3);
+}
+.container .firstBox i{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.container .secondBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    margin: 0 40px;
+}
+.secondBox .sb{
+    border: 1px solid lightgrey;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 30px;
+    transition: all 0.3s;
+
+}
+.secondBox .sb:hover{
+    border-color: black;
+}
+.secondBox .sb2{
+    font-size: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
