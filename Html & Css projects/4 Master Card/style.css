@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    height: 225px;
+    width: 385px;
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    padding:  1.5rem;
+}
+.card .firstBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+}
+.card .firstBox .imgCont{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.card .secondBox p:first-child{
+    font-size: 14px;
+}
+.card .secondBox p:nth-child(2){
+    font-size: 20px;
+    margin-top: 0.8rem;
+    letter-spacing: 1.5px;
+}
+span{
+    margin: 0px 1px;
+}
+.thirdBox{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+.thirdBox .firstPara{
+    font-size: 1.1rem;
+}
+.thirdBox .secondPara{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 1rem;
+}
+.thirdBox .secondPara .date{
+    font-size: 18px;
+}
+.thirdBox .secondPara .validity{
+    font-size: 14px;
+}
