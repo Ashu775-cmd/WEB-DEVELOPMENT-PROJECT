@@ -1,0 +1,779 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+}
+
+body {
+    background-color: #f3eaeae9;
+}
+
+header {
+    height: 66px;
+    width: 100%;
+    padding: 12px 28px;
+    display: flex;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.logoAndSearchContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+}
+
+header .logoImage {
+    width: 160px;
+}
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchBarContainer span {
+    width: 44px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 8px 12px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: gray;
+}
+
+.searchBarContainer .searchIcon {
+    font-size: 30px;
+    font-weight: 300;
+    background-color: #ebeffc;
+}
+
+.searchBarContainer .searchBar {
+    height: 40px;
+    width: 433px;
+    border: 0;
+    outline: 0 none;
+    font-size: 17px;
+    height: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #ebeffc;
+}
+
+.searchBarContainer .searchBar::placeholder {
+    letter-spacing: 0.5px;
+}
+
+.secondContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+.accountIocnContaier {
+    display: flex;
+    align-items: center;
+}
+
+.accountIocnContaier .accountClass {
+    width: 63px;
+    height: 24px;
+}
+
+.accountIocnContaier .profileImage {
+    height: 24px;
+    margin: 0px 8px 0px 0px;
+}
+
+.accountIocnContaier .downArrow {
+    height: 12px;
+    margin: 0px 0px 0px 8px;
+}
+
+.cartContainer {
+    display: flex;
+    align-items: center;
+}
+
+.cartContainer .cartImage {
+    width: 24px;
+    margin: 0px 8px 0px 0px;
+}
+
+.cartContainer .cartClass {
+    width: 32px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.becomeAsellerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.becomeAsellerContainer .storeIcon {
+    width: 24px;
+    margin: 0px 8px 0px 0px;
+}
+
+.becomeAsellerContainer .textClass {
+    width: 122px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+}
+
+/*second row*/
+.featuresContainer {
+    background-color: #ffffff;
+    margin: 0.5rem 1rem;
+    display: flex;
+}
+
+.featuresContainer img {
+    width: 64px;
+}
+
+.featuresContainer .box {
+    width: 130px;
+    height: 141px;
+    padding: 16px 16px 16px 24px;
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.featuresContainer .text {
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bannerSection {
+    margin: 1rem 1rem 0px 1rem;
+    width: 1235px;
+    position: relative;
+}
+
+.bannerSection img {
+    height: 207px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bannerSection .btn {
+    width: 40px;
+    height: 88px;
+    background-color: #ffffff;
+    position: absolute;
+    margin: 71.5px 0px 71.5104px;
+    border: none;
+    color: gray;
+}
+
+.bannerSection .leftBtn {
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.bannerSection .rightBtn {
+    border-radius: 5px 0px 0px 5px;
+    right: 0;
+}
+
+.bannerBottom {
+    width: 1235px;
+    height: 24px;
+    background-color: #ffffff;
+    margin: -2px 1rem 1rem 1rem;
+}
+
+.textRowWrapper {
+    width: 1037px;
+    height: 62px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-left: 1rem;
+}
+
+.textRow {
+    width: 1005px;
+    height: 30px;
+    font-size: 22px;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+/* rowOneProducts css */
+.rowOneProductItems {
+    display: flex;
+    margin: 1rem;
+    background-color: #ffffff;
+}
+
+.rowOneProductItems .boxOne {
+    /* border: 1px solid black;
+    width: 1037px;
+    height: 62px; */
+}
+
+.rowOneProductItems .boxOne .boxSectionOne {
+    width: 1037px;
+    height: 62px;
+    /* border: 1px solid black; */
+    padding: 16px;
+}
+
+.rowOneProductItems .boxOne .boxSectionOne .textClass {
+    width: 1005px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1f1f1f;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo {
+    width: 1037px;
+    height: 256px;
+    padding: 0px 4px 12px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item {
+    /* border: 1px solid black; */
+    height: 244px;
+    width: 216px;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox {
+    height: 228px;
+    width: 200px;
+
+    padding: 12px 24px;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .imageContainer {
+    height: 152px;
+    width: 152px;
+
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .lastImageContainer {
+
+    position: relative;
+    object-position: left;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .lastImageContainer .btn {
+    width: 40px;
+    height: 88px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    color: gray;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .textContainer {
+    height: 52px;
+    width: 152px;
+    padding: 12px 0px 0px;
+    color: #1f1f1fee;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .textContainer .textOne {
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.rowOneProductItems .boxOne .boxSectionTwo .item .itemBox .textContainer .textTwo {
+
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rowOneProductItems .boxTwo {
+    width: 194px;
+    height: 318px;
+    display: flex;
+    align-items: center;
+}
+
+.rowOneProductItems .boxTwo img {
+    height: 294px;
+    width: 194px;
+}
+
+/* card Section*/
+.cardContainer {
+    /* background-color: #ffffff; */
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContainer .cardOne {
+    background-color: #ffffff;
+}
+
+.cardContainer .cardOne .topSection {
+    width: 405px;
+    height: 80px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardContainer .cardOne .topSection .textContent {
+    height: 30px;
+    width: 341px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #1f1f1f;
+    font-weight: 600;
+
+}
+
+.cardContainer .cardTwo .topSection .textContent {
+    height: 30px;
+    width: 341px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #1f1f1f;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+
+}
+.cardContainer .cardThree .topSection .textContent {
+    height: 30px;
+    width: 341px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #1f1f1f;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+
+}
+
+.cardContainer .cardOne .topSection .arrowContainer {
+    border: 1px solid black;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-radius: 42px;
+    background-color: #2A55E5;
+    border: none;
+}
+
+.cardContainer .cardTwo .topSection .arrowContainer {
+    border: 1px solid black;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-radius: 42px;
+    background-color: #2A55E5;
+    border: none;
+}
+.cardContainer .cardThree .topSection .arrowContainer {
+    border: 1px solid black;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-radius: 42px;
+    background-color: #2A55E5;
+    border: none;
+}
+
+.cardContainer .cardOne .topSection .arrowContainer i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.cardContainer .cardTwo .topSection .arrowContainer i {
+    color: #ffffff;
+    font-size: 16px;
+}
+.cardContainer .cardThree .topSection .arrowContainer i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.cardContainer .cardTwo {
+    background-color: #ffffff;
+}
+
+.cardContainer .cardTwo .topSection {
+    width: 405px;
+    height: 80px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.cardContainer .cardThree .topSection {
+    width: 405px;
+    height: 80px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.cardContainer .cardThree {
+    width: 405px;
+    height: 593px;
+    background-color: #ffffff;
+}
+
+.cardContainer .cardThree img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardContainer .bottomSection {
+    width: 405px;
+    height: 497px;
+    padding: 0px 12px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardContainer .bottomSection .gadget {
+    width: 182px;
+    height: 238px;
+    padding: 0px 0px 12px;
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem {
+    height: 225px;
+    width: 181px;
+    padding: 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.02px solid rgba(211, 211, 211, 0.6);
+    border-radius: 5px;
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetImageContainer {
+
+    width: 157px;
+    height: 149px;
+    padding: 8px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetImageContainer img {
+    height: 141px;
+
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetTextContainer {
+    width: 157px;
+    height: 64px;
+    padding: 16px 0px 0px;
+
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetTextContainer .gadgetFirstText {
+
+    height: 24px;
+    width: 157px;
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetTextContainer .gadgetSecondText {
+    height: 24px;
+    width: 157px;
+    font-size: 17px;
+    color: #1f1f1f;
+}
+
+.cardContainer .bottomSection .gadget .gadgetItem .gadgetTextContainer .gadgetSecondText .gadgetText {
+    margin: 0px 6px 0px 0px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #108934;
+}
+/* slider css */
+.sliderContainer{
+    margin: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.sliderContainer .topContainer{
+    width: 1248px;
+    height: 62px;
+    padding: 16px;
+}
+.sliderContainer .topContainer .textCont{
+    width:1216px ;
+    height: 30px;
+    font-size: 22px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+.sliderContainer .bottomContainer{
+    width: 1248px;
+     height:256px ;
+     padding: 0px 4px 12px;
+     display: flex;
+     overflow: visible;
+}
+.sliderContainer .bottomContainer .sliderItem{
+    width: 216px;
+    height: 244px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont{
+    width: 200px;
+    height: 228px;
+    padding: 12px 24px;
+    overflow: hidden;
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont .imgCont{
+    width: 152px;
+    height: 152px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont .imgCont img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* width: 152px; */
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont .textCont{
+    width: 152px;
+    height: 52px;
+    padding: 12px 0px 0px;
+    text-align: center;
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont .textCont .text{
+    width: 152px;
+    height: 20px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+.sliderContainer .bottomContainer .sliderItem .itemContentCont .textCont .textTwo{
+    font-weight: 600;
+}
+/* Footer Container Css */
+.footerContainer{
+    width: 1264px;
+    height: 351.33px;
+    background: #212121;
+}
+.footerContainer .footerContOne{
+    width: 1264px;
+    height: 242.67px;
+    padding: 40px 60px 0px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+.footerContainer .footerContOne .box{
+   
+    height: 202.67px;
+    width: 129.47px;
+}
+.footerContainer .footerContOne .box .boxBOne{
+    height: 14px;
+    width: 129.47px;
+    color: #878787;
+    font-size: 12px;
+    margin: 0px 0px 12px;
+    text-transform: uppercase;
+}
+.footerContainer .footerContOne .box .links{
+    width: 129px;
+    height: 18px;
+}
+.footerContainer .footerContOne .box .links a{
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footerContainer .footerContOne .largeBox{
+    border-left: 0.5px solid #454d5e;
+    height: 202.67px;
+    width: 287.39px;
+    padding: 0px 0px 0px 32px;
+}
+.footerContainer .footerContOne .largeBox .socilaLinksContainer{
+    height: 18px;
+    width: 254.72px;
+    height: 14px;
+    margin: 12px 0px 12px;
+}
+.footerContainer .footerContOne .largeBox .socilaLinksContainer .socialCont{
+    margin: 0px 0px 12px;
+}
+.footerContainer .footerContOne .largeBox .socilaLinksContainer a{
+    font-size: 12px;
+    color: #878787;
+    text-decoration: none;
+}
+.footerContainer .footerContOne .largeBox .socilaLinksContainer .socialContainer{
+    height: 26px;
+    width: 254.72px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footerContainer .footerContOne .largeBox .socilaLinksContainer .socialContainer a{
+    font-size: 12px;
+}
+
+
+.footerContainer .footerContOne .largeBox .socilaLinksContainer .socialContainer img{
+    height: 24px;
+}
+
+.footerContainer .footerContOne .largeBox .lineOne{
+    width: 254.72px;
+    height: 14px;
+    color: #878787;
+    margin: 0px 0px 12px;
+    font-size: 12px;
+}
+.footerContainer .footerContOne .largeBox .line{
+    width: 254.72px;
+    height: 18px;
+}
+.footerContainer .footerContOne .largeBox .line a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+.footerContainer .footerContOne .largeBox .socialLink{
+    margin: 0px 0px 12px;
+    color: #878787;
+    height: 14px;
+    width: 254.72px;
+}
+.footerContainer .footerContOne .largeBox .socialLink a{
+    margin: 0px 0px 12px;
+    color: #878787;
+    height: 14px;
+    width: 254.72px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footerContainer .footerContOne .largeBox{
+    height: 202.67px;
+    width: 254.72px;
+    padding: 0px 0px 0px 32px;
+}
+.footerContainer .footerContOne .largeBox .line span{
+    color: #2874f0;
+}
+
+.footerContainer .footerContTwo{
+    width: 1264px;
+    height: 68px;
+    border-top: 1px solid #454d5e;
+    margin: 40px 0px 0px;
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footerContainer .footerContTwo .footerBox{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffff;
+    justify-content: space-between;
+}
+.footerContainer .footerContTwo .footerBox .iconCont{
+    
+}
+.footerContainer .footerContTwo .footerBox .iconCont img{
+    width: 13px;
+}
+
+.footerContainer .footerContTwo .footerBoxOne{
+
+    height: 18px;
+    width: 112.39px;
+}
+.footerContainer .footerContTwo .footerBoxTwo{
+    height: 18px;
+    width: 76.18px;
+}
+.footerContainer .footerContTwo .footerBoxThree{
+    height: 18px;
+    width: 78.52px;
+}
+.footerContainer .footerContTwo .footerBoxFour{
+    height: 18px;
+    width: 88.97px;
+}
+.footerContainer .footerContTwo .footerBoxFive{
+    height: 18px;
+    width: 149.98px;
+}
+.footerContainer .footerContTwo .footerBoxSix{
+    height: 18px;
+    width:377px ;
+}
+.footerContainer .footerContOne .boxtwo{
+    border: none;
+}

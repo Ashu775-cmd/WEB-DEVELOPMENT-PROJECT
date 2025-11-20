@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.container{
+    height: 100vh;
+    background-color: #c8e8e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .wrapper{
+    height: 70vh;
+    width: 80vw;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.firstBox{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 250px;
+    height: 100%;
+}
+.firstBox .row{
+    text-align: center;
+    line-height: 1.3;
+}
+.firstBox .row .icon{
+    color: #3e2093;
+    font-size: 1.8rem;
+}
+.firstBox .row .para:nth-child(2){
+    margin-top: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.firstBox .row .para:nth-child(3){
+    color: lightgray;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.firstBox .row .para:nth-child(4){
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: lightgray;
+}
+.secondBox{
+    margin: 10px 0;
+    height: 100%;
+    position: relative;
+}
+.secondBox .secondBoxRowOne p{
+    line-height: 1.2;
+}
+.secondBox .secondBoxRowOne p:first-child{
+    color: #3e2093;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.secondBox .secondBoxRowOne p:nth-child(2){
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.secondBox .secondBoxRowOne p:nth-child(3){
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.secondBox form{
+    margin: 1rem 0;
+}
+.secondBox form input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:rgba(131, 131, 244, 0.1);
+    border-radius:5px ;
+    margin: 0.5rem 0;
+    padding: 5px 8px;
+    font-size: 1.1rem;
+}
+.secondBox form textarea{
+    width: 100%;
+    border: none;
+    height: 85px;
+    outline: none;
+    background:rgba(131, 131, 244, 0.1);
+    border-radius:5px ;
+    margin: 0.5rem 0;
+    padding: 5px 8px;
+    font-size: 1.1rem;
+}
+form .btn{
+    margin-top: 0.5rem;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: #3e2093;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form .btn:hover{
+    opacity: 0.9;
+}
+.spearation{
+    position: absolute;
+    height: 70%;
+    /* border: 2px solid black; */
+    border: 1px solid gray;
+    left: -7%;
+    margin-top: 3rem;
+    transform: translateX(-20%);
+}

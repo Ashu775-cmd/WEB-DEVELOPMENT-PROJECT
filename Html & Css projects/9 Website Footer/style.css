@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #eeeceb;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #140b5c;
+    width: 100%;
+    left: 0;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #afafb6;
+    left: 0;
+    top: 100px;
+}
+footer .mainContainer{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+footer .mainContainer .firstBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.firstBox .logoBox{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.firstBox .mediaIcons{
+    display: flex;
+}
+.firstBox .mediaIcons a{
+    height: 40px;
+    width: 40px;
+    background: red;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.firstBox .mediaIcons a:nth-child(1){
+    background-color: #4267b2;
+}
+.firstBox .mediaIcons a:nth-child(1):hover{
+    color: #4267b2;
+    background: #fff;
+}
+.firstBox .mediaIcons a:nth-child(2){
+    background: #1da1f2;
+}
+.firstBox .mediaIcons a:nth-child(2):hover{
+    color: #1da1f2;
+    background: #fff;
+}
+.firstBox .mediaIcons a:nth-child(3){
+    background: #e1306c;
+}
+.firstBox .mediaIcons a:nth-child(3):hover{
+    color: #e1306c;
+    background: #fff;
+}
+.firstBox .mediaIcons a:nth-child(4){
+    background: #0077b5;
+}
+.firstBox .mediaIcons a:nth-child(4):hover{
+    color: #0077b5;
+    background: #fff;
+}
+.firstBox .mediaIcons a:nth-child(5){
+    background: red;
+}
+.firstBox .mediaIcons a:nth-child(5):hover{
+    color: red;
+    background: #fff;
+}
+footer .linkBoxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+footer .linkBoxes .box{
+    width: calc(100% / 5 - 10px);
+}
+footer .linkBoxes .box li{
+    list-style: none;
+}
+footer .linkBoxes .box .linkName{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+.linkBoxes .box .linkName::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    left: 0;
+    bottom: -2px;
+    background: #fff;
+}
+.linkBoxes .box li{
+    margin: 6px 0;
+}
+footer .linkBoxes .box li a{
+    text-decoration: none;
+    color:  #fff;
+    list-style: none;
+    opacity: 0.8;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+footer .linkBoxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    
+}
+footer .linkBoxes .inputBox{
+    margin-right: 55px;
+}
+footer .linkBoxes .inputBox input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #afafb6;
+    border-radius: 5px;
+    background: #140b5c;
+    padding: 0 15px;
+    font-size: 15 px;
+    text-align: center;
+    color: #fff;
+    margin-top: 4px;
+}
+footer .linkBoxes .inputBox input::placeholder{
+    color: #afafb6;
+    font-size: 16px;
+}
+footer .linkBoxes .inputBox input[type="button"]{
+    background: #fff;
+    border: none;
+    color: #140b5c;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 4px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+footer .linkBoxes .inputBox input[type="button"]:hover{
+    opacity: 1;
+
+}
+footer .bottomDetails{
+    width: 100%;
+    background: #0f0844;
+}
+footer .bottomDetails .bottomText{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottomDetails .bottomText span,
+footer .bottomDetails .bottomText a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer .bottomDetails .bottomText a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+footer .bottomDetails .bottomText a{
+    margin-right: 10px;
+}
+@media(max-width:900px){
+    footer .linkBoxes{
+        flex-wrap: wrap;
+    }
+    footer .linkBoxes .inputBox{
+        width: 40%;
+        margin-top: 10px;
+}
+}
+@media(max-width:700px){
+    footer{
+        position: relative;
+    }
+    .firstBox .logoBox{
+        font-size: 26px;
+    }
+    .firstBox .mediaIcons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    }
+    footer .linkBoxes .box{
+    width: calc(100% / 3 - 10px);
+}
+ footer .linkBoxes .inputBox{
+        width: 60%;
+        margin-top: 10px;
+}
+ .bottomDetails .bottomText span,
+ .bottomDetails .bottomText a{
+    font-size: 12px;
+}
+
+}
+@media (max-width:520px) {
+    footer::before{
+    top: 145px;
+}
+    footer .mainContainer .firstBox{
+       flex-direction: column;
+    }
+      footer .linkBoxes .box{
+    width: calc(100% / 2 - 10px);
+}
+    
+     .firstBox .mediaIcons a{
+        margin-top: 16px;
+     }
+      footer .linkBoxes .inputBox{
+        width: 100%;
+}
+    
+}
+
+
+

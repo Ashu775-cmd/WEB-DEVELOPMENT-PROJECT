@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.wrapper .loader{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: loadingAnimation 1s infinite  alternate-reverse linear;
+}
+@keyframes loadingAnimation {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: rgb(41, 250, 41);
+
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+
+    }
+    100%{
+
+    }
+}
